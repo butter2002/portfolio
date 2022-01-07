@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>X106</title>
+    <meta name="description" content="フォーム">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>X106アンケート</h1>
+        </header>
+        <main>
+            <form action="example.php" method="POST">
+                <label>名前:<input type="text" placeholder="名字 名前"></label>
+                <br>
+                <p>性別:</p>
+                <label><input type="radio" name="gender1" value="男">男</label>
+                <label><input type="radio" name="gender2" value="女" checked>女</label>
+                <label><input type="radio" name="gender3" value="その他">その他</label>
+                <p>好きな色:<p>
+                        <label><input type="checkbox" name="color1" value="赤" checked>赤</label>
+                        <label><input type="checkbox" name="color2" value="青">青</label>
+                        <label><input type="checkbox" name="color3" value="緑">緑</label>
+                        <label><input type="checkbox" name="color4" value="黄">黄</label>
+                        <br>
+                        <label for="blood">血液型:</label>
+                        <select name="bloodtype" id="blood">
+                            <option value="不明" selected>不明</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="O">O</option>
+                            <option value="AB">AB</option>
+                        </select>
+                        <p>あなたの性格:</p>
+                        <label><input type="radio" name="Person1" value="明るい" checked>明るい</label>
+                        <label><input type="radio" name="Person2" value="穏やか">穏やか</label>
+                        <label><input type="radio" name="Person3" value="いい加減">いい加減</label>
+                        <label><input type="radio" name="Person4" value="その他">その他</label>
+                        <br>
+                        <input type="image" src="images/button.png" alt="送信する">
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>

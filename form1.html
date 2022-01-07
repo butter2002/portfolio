@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>X106</title>
+    <meta name="description" content="フォーム">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>X106アンケート</h1>
+        </header>
+        <main>
+            <form action="example.php" method="POST">
+                <label for="input">出席番号を入力してください</label>
+                <input id="input" name="i_number" required pattern="[ABKPSX][0-9]{3}" placeholder="ex.X000">
+                <br>
+                <label for="choose">banana と cherry と orangeのどれが好き</label>
+                <input type="text" name="i_like" required pattern="[Bb]anana|[Cc]herry|[Oo]range">
+                <br>
+                <label for="num">どのくらい要りますか？</label>
+                <input type="number" name="num" min="1" max="10" value="1" title="値は10以下にする必要があります。">
+                <br>
+                <button>Submit</button>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>

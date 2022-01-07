@@ -1,0 +1,103 @@
+html{
+    font-size: 100%;
+}
+body{
+    font-family: 'Libre Baskerville', serif;
+    line-height: 1.7;
+}
+a{
+    text-decoration:none;
+}
+img{
+    max-width: 100%;
+}
+/*hedder*/
+.logo{
+    width: 120px;
+    margin-top: 10px;
+    border-radius: 100px;
+}
+.main-nav{
+    display: flex;
+    font-size:1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li{
+    margin-left: 36px;
+}
+.main-nav a{
+    color: whitesmoke;
+}
+.main-nav a:hover{
+    color:cornflowerblue;
+}
+.page-header{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper{
+    max-width: 2100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+/*home*/
+.home-content{
+    text-align: center;
+    margin-top:10%;
+}
+.home-content p{
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+/*見出し*/
+.page-title{
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+/*button*/
+.button{
+    position: relative;
+    top: 30px;
+    font-size:1.375rem;
+    background: dimgrey;
+    color:#fff;
+    border-radius: 100px;
+    padding: 18px 32px;
+}
+.button:hover{
+    background-color: cornflowerblue;
+}
+/*img*/
+.big-bg{
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+#home .page-title{
+    text-transform: none;
+}
+h2{
+    color:#e6f0f0;
+    font-size: 5rem;
+    text-transform:uppercase;
+    font-weight:normal;
+}
+.title{
+    text-align: center;
+    margin-top: 10%;
+}
+
+body{
+    background-image: url(../images/fountain-pen-g2a2d731c5_1920.jpg);
+    min-height: 100vh;
+}
+body{
+    animation: fadeIn 2s ease 0.2s 1 normal;
+}
+@keyframes fadeIn{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>X106</title>
+    <meta name="description" content="自己紹介">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Yuuya Mizukura</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Contact Me</h2>
+                <form action="example.php" method="GET">
+                    <label>名前:<input type="text" name="name" placeholder="名前" required maxlength="15" title="15文字以下"></label>
+                    <br>
+                    <label>メールアドレス:<input type="email" name="email" placeholder="メールアドレス" required pattern="^[a-zA-Z0-9_.+-]+@([a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$" title="xx@xx.xx以外使用不可"></label>
+                    <br>
+                    <label>電話番号:<input type="tel" name="tel" placeholder="電話番号" required pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" title="数字11文字以上"></label>
+                    <br>
+                    <label>メッセージ:<textarea name="message" cols="50" rows="5" placeholder="メッセージ" ></textarea></label>
+                    <br>
+                    <input type="submit">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Last Modified:
+                <script>
+                    var modified = new Date(document.lastModified);
+                    var year = modified.getFullYear();
+                    var month = modified.getMonth() + 1;
+                    var date = modified.getDate();
+                    document.write(year + "年" + month + "月" + date + "日");
+                </script>
+            </p>
+            <p><small>&copy;Yuuya Mizukura,All Rights Reserved.</small></p>
+        </footer>
+    </div>
+</body>
+
+</html>
